@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Personal Portfolio</title>
   <style>
-    /* Reset & Base Styles */
-    * {
+  
+     {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -61,6 +61,25 @@
       padding-bottom: 5px;
       margin-bottom: 15px;
     }
+.about-container {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+    .profile-photo-left {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #3498db;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      flex-shrink: 0;
+    }
+    .about-text {
+      flex: 1;
+      min-width: 250px;
+    }    
     ul {
       list-style-type: square;
       padding-left: 20px;
@@ -102,9 +121,9 @@
 </head>
 <body>
 
-  <!-- Navigation / Header -->
+
   <header>
-    <h1>Your Name</h1>
+    <h1>Alvin Bustillo</h1>
     <p>BS in Computer Science Student</p>
     <nav>
       <a href="#about">About Me</a>
@@ -116,11 +135,13 @@
 
   <div class="container">
 
-    <!-- Section 1: About Me -->
-    <section id="about">
+   <section id="about">
       <h2>1. About Me</h2>
-      <p><strong>Name:</strong> Your Full Name</p>
-      <p><strong>Course/Program:</strong> Bachelor of Science in Information Technology (BSIT)</p>
+      <div class="about-container">
+       
+        <img src="alvin.jpg ="Your Profile Photo" class="profile-photo-left">
+        <p><strong>Name:</strong>Alvin B. Bustillo</p>
+      <p><strong>Course/Program:</strong> Bachelor of Science in Computer Science (BSCS)</p>
       <br>
       <p><strong>Personal Introduction:</strong> Hello! I am a passionate tech enthusiast currently pursuing my degree. I love solving problems through code and exploring modern web development technologies.</p>
       <br>
@@ -131,10 +152,10 @@
     <section id="hobbies">
       <h2>2. Hobbies & Interests</h2>
       <ul>
-        <li>Building DIY electronic components and exploring IoT projects.</li>
-        <li>Playing strategy video games and participating in online puzzle competitions.</li>
-        <li>Photography and digital photo editing outside of academic hours.</li>
-        <li>Reading technology blogs and attending virtual tech meetups.</li>
+        <li>Working out</li>
+        <li>Playing online games.</li>
+        <li>Playing basketball </li>
+        <li>Building classic motorcycle.</li>
       </ul>
     </section>
 
@@ -142,10 +163,10 @@
     <section id="skills">
       <h2>3. Skills</h2>
       <ul>
-        <li><strong>Programming Languages:</strong> JavaScript, Python, C++, HTML5, CSS3</li>
-        <li><strong>Web Development Skills:</strong> Responsive Web Design, Flexbox, CSS Grid, Basic REST APIs</li>
-        <li><strong>Software & Tools:</strong> Git, GitHub, VS Code, Figma, Postman</li>
-        <li><strong>Technical & Professional Skills:</strong> Problem Solving, Technical Documentation, Version Control</li>
+        <li><strong>Programming Languages:</strong> JavaScript, Python, C++, HTML, CSS</li>
+        <li><strong>Web Development Skills:</strong> Responsive Web Design</li>
+        <li><strong>Software & Tools:</strong> Git, GitHub, VS Code</li>
+        <li><strong>Technical & Professional Skills:</strong> Problem Solving, Technical Documentation</li>
       </ul>
     </section>
 
@@ -156,28 +177,20 @@
       <!-- Project 1 -->
       <div class="project-card">
         <h3>Portfolio Website</h3>
-        <p>A responsive personal portfolio built using HTML5 and CSS3, deployed on GitHub Pages to showcase my skills and accomplishments.</p>
+        <p>A responsive personal portfolio built using HTML and CSS, deployed on GitHub Pages to showcase my skills and accomplishments.</p>
         <div class="project-links">
           <a href="https://github.com/your-username/your-repository-name" target="_blank">GitHub Repository</a>
           <a href="https://your-username.github.io/your-repository-name/" target="_blank">Live Demo</a>
         </div>
       </div>
 
-      <!-- Project 2 -->
-      <div class="project-card">
-        <h3>Sample Project Title</h3>
-        <p>A short description of a previous academic or personal project you worked on (e.g., a simple calculator web application or to-do list app).</p>
-        <div class="project-links">
-          <a href="https://github.com/your-username/sample-project" target="_blank">GitHub Repository</a>
-          <a href="https://your-username.github.io/sample-project/" target="_blank">Live Demo</a>
-        </div>
-      </div>
+  
     </section>
 
   </div>
 
   <footer>
-    <p>&copy; 2026 Your Name. All rights reserved.</p>
+    <p>&copy; 2026 Alvin Bustillo. All rights reserved.</p>
   </footer>
 
 </body>
