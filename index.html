@@ -61,8 +61,25 @@
       padding-bottom: 5px;
       margin-bottom: 15px;
     }
-
-      
+.about-container {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+    .profile-photo-left {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #3498db;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      flex-shrink: 0;
+    }
+    .about-text {
+      flex: 1;
+      min-width: 250px;
+    }      
     ul {
       list-style-type: square;
       padding-left: 20px;
@@ -115,12 +132,17 @@
       <a href="#projects">Projects</a>
     </nav>
   </header>
+  
+<div class="container">
 
-       <div class="container">
-
+  
     <section id="about">
       <h2>1. About Me</h2>
-      <p><strong>Name:</strong>Alvin B. Bustillo</p>
+      <div class="about-container">
+     
+        <img src="alvin.jpg" alt="Your Profile Photo" class="profile-photo-left">  
+        
+        <p><strong>Name:</strong>Alvin B. Bustillo</p>
       <p><strong>Course/Program:</strong> Bachelor of Science in Computer Science (BSCS)</p>
       <br>
       <p><strong>Personal Introduction:</strong> Hello! I am a passionate tech enthusiast currently pursuing my degree. I love solving problems through code and exploring modern web development technologies.</p>
